@@ -8,7 +8,9 @@ export default async function Home() {
 }
 
 async function getData() {
-  const res = await fetch("http://localhost:31337")
+  const res = await fetch("http://localhost:31337", {
+    cache: 'no-cache'
+  })
   const data = await res.json()
 
   return data
