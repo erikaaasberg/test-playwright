@@ -8,7 +8,7 @@ export default async function Home() {
 }
 
 async function getData() {
-  const res = await fetch("http://localhost:31337/hei")
+  const res = await fetch("http://localhost:31337")
   const data = await res.json()
 
   return data
