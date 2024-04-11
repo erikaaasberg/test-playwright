@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  mock-rest-api:
+    build:
+      context: mock-rest-api
+    ports:
+      - "31337:31337"
